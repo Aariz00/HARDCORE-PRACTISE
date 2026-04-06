@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.main {
+  min-height: 100vh;
+  background-image: url(https://bmw.scene7.com/is/image/BMW/index-banner-v4:16to7?fmt=webp&wid=1504&hei=658);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 550;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.nav-content {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid white;
+}
+
+.nav-left {
+  background: transparent;
+  display: flex;
+  align-items: center;
+}
+
+.nav-left>a {
+  text-align: center;
+  padding: 1rem 0.7rem;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  margin: 2px 1rem;
+  padding: 1rem 0.5rem;
+  background-color: transparent;
+
+}
+
+.nav-right>a {
+  text-align: center;
+  padding: 1rem;
+}
+
+.nav-left>a:first-child .logo-icons {
+  width: 80px;
+  height: 80px;
+  display: block;
+}
+
+.main-content p, h1{
+  color: white;
+}
+
+.main-content{
+  position: absolute;
+  top: 30%;
+  left: 8%;
+
+}
+.main-content > .top{
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.main-content > .bottom{
+  font-size: 18px;
+  margin: 10px;
+}
+
+
+.main-content > h1{
+  font-size: 8rem;
+}
+
+.btn {
+    background-color: #1c69d4;   
+    color: white;
+    border: none;
+
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 600;
+
+    border-radius: 6px;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1558b0;
+}
