@@ -16,17 +16,22 @@ body {
     background-color: aqua;
     padding: 40px;
 
+
 }
 
 .card {
     height: 225px;
     width: 345px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 
     border-radius: 20px;
 
     position: relative;
     overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
 
 }
 
@@ -55,6 +60,7 @@ body {
 .card h2 {
     padding: 20px 20px;
     font-size: 1.2rem;
+
 }
 
 .card img {
@@ -68,4 +74,27 @@ body {
     position: absolute;
     left: 60%;
     top: 5%;
+}
+
+.bottom {
+    margin-top: auto;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-info {
+    height: 7vh;
+    width: 80%;
+    background-color: #79e6ff;
+    z-index: 1;
+
+    border-radius: 7px;
+
+}
+
+
+.bottom-info, Bat{
+    background-image: url(https://www.bcci.tv//img/bat.svg);
+    background-repeat: no-repeat;
 }
