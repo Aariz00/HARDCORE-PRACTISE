@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+    min-height: auto;
+    min-width: auto;
+    background-color: coral;
+    
+}
+
+#parent{
+    min-height: 100vh;
+    min-width: 100%;
+    background-color: gray;
+    padding: 40px;
+    display: flex;
+    gap: 30px;flex-wrap: nowrap;
+    overflow: auto;
+}
+
+.child{
+    height: 40vh;
+    width: 18vw;
+    background-color: white;
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+
+
+/* I can also add images inthis and edity the scroool bar if i want  */
