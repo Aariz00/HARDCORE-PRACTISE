@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+
+main{
+  height: 100%;
+  width: 100%;
+  background-color: gray;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 15vh 300px 1fr;
+
+  grid-template-areas: "header header"
+                       "aside section"
+                       "figure figure"
+  
+  ;
+
+  gap: 20px;
+  padding: 50px;
+
+  text-align: center;
+}
+
+header{
+    grid-area: header;
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+
+aside{
+    grid-area: aside;
+    background-color: darkcyan;
+    border-radius: 20px;
+}
+
+section{
+    grid-area: section;
+    background-color: rgb(94, 101, 230);
+    border-radius: 20px;
+}
+
+figure{
+    grid-area: figure;
+    background-color: blanchedalmond;
+    border-radius: 20px;
+}
