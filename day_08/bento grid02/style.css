@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+    min-height: 100vh;
+    width: fit-content;
+    background-color: rgb(8, 8, 6);
+
+    display: grid;
+
+    grid-template-columns: 200px 100px 100px;
+    grid-template-rows: 10vh 10vh 300px 1fr;
+
+    grid-template-areas: "header top-small-1 top-small-2"
+        "middle-left middle-small-1 middle-small-2"
+        "middle-left bottom-right bottom-right"
+        "bottom-left bottom-right bottom-right";
+
+    gap: 20px;
+    padding: 40px 40px;
+    text-align: center;
+    text-rendering: uppercase;
+
+
+    
+
+}
+
+header {
+    padding: 20px;
+    grid-area: header;
+    background-color: rgb(165, 176, 108);
+    border-radius: 25px;
+}
+
+.top-small-1 {padding: 20px;
+    border-radius: 25px;
+    grid-area: top-small-1;
+    background-color: rgb(165, 176, 108);
+}
+
+.top-small-2 {padding: 20px;
+    border-radius: 25px;
+    grid-area: top-small-2;
+    background-color: rgb(165, 176, 108);
+}
+
+.middle-left {padding: 20px;
+    border-radius: 25px;
+    grid-area: middle-left;
+    background-color: rgb(165, 176, 108);
+}
+
+.middle-small-1 {padding: 20px;
+    border-radius: 25px;
+    grid-area: middle-small-1;
+    background-color: rgb(165, 176, 108);
+}
+
+.middle-small-2 {padding: 20px;
+    border-radius: 25px;
+    grid-area: middle-small-2;
+    background-color: rgb(165, 176, 108);
+}
+
+.bottom-left {padding: 20px;
+    border-radius: 25px;
+    grid-area: bottom-left;
+    background-color: rgb(165, 176, 108);
+}
+
+.bottom-right {padding: 20px;
+    border-radius: 25px;
+    grid-area: bottom-right;
+    background-color: rgb(165, 176, 108);
+}
+
+.footer-left {padding: 20px;
+    border-radius: 25px;
+    grid-area: footer-left;
+    background-color: rgb(165, 176, 108);
+}
+
+.footer-right {padding: 20px;
+    border-radius: 25px;
+    grid-area: footer-right;
+    background-color: rgb(165, 176, 108);
+}
