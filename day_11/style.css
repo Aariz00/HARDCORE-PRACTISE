@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    min-height: 100vh;
+    width: 100vw;
+    padding: 30px;
+    gap: 15px;
+
+    display: grid;
+
+    grid-template-columns: 0.6fr 0.4fr 0.4fr 0.4fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-template-areas: "big_img width_img width_img width_img"
+        "big_img mountain_img flower_img horse_img";
+
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.big_img {
+    grid-area: big_img;
+    border-radius: 25px;
+    background-color: rgb(30, 91, 91);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.width_img {
+    grid-area: width_img;
+    border-radius: 25px;
+    background-color: rgb(30, 91, 91);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mountain_img {
+    grid-area: mountain_img;
+    border-radius: 25px;
+    background-color: rgb(30, 91, 91);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flower_img {
+    grid-area: flower_img;
+    border-radius: 25px;
+    background-color: rgb(30, 91, 91);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.horse_img {
+    grid-area: horse_img;
+    border-radius: 25px;
+    background-color: rgb(30, 91, 91);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
