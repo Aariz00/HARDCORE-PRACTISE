@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    min-height: 100vh;
+    width: auto;
+    background-color: gray;
+    padding: 50px;
+
+    display: grid;
+    grid-template-columns: 0.9fr 1fr 1fr 0.9fr;
+    grid-template-rows: 0.3fr 1fr 1fr;
+
+    grid-template-areas: "nav_left nav_mid nav_mid nav_right"
+        "content_left content_left big_img big_img"
+        "client_details client_details small_img_1 small_img_2";
+
+    gap: 15px;
+
+    border-radius: 25px;
+
+    
+
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.nav_left {
+    grid-area: nav_left;
+    background-color: rgb(227, 227, 227);
+    border-radius: 25px;
+
+}
+
+.nav_mid {
+    grid-area: nav_mid;
+    background-color: rgb(227, 227, 227);
+    border-radius: 25px;
+}
+
+.nav_right {
+    grid-area: nav_right;
+    background-color: rgb(227, 227, 227);
+    border-radius: 25px;
+}
+
+.content_left {
+    grid-area: content_left;
+    background-color: rgb(227, 227, 227);
+    border-radius: 25px;
+}
+
+.big_img {
+    grid-area: big_img;
+    background-color: rgb(227, 227, 227);
+    border-radius: 25px;
+}
+
+.client_details {
+    grid-area: client_details;
+    background-color: rgb(227, 227, 227);
+    border-radius: 25px;
+}
+
+.small_img_1 {
+    grid-area: small_img_1;
+    background-color: rgb(227, 227, 227);
+    border-radius: 25px;
+}
+
+.small_img_2 {
+    grid-area: small_img_2;
+    background-color: rgb(227, 227, 227);
+    border-radius: 25px;
+}
