@@ -30,7 +30,7 @@ body {
 
   display: inline-flex;
   gap: 40px;
-  width: min(920px, 92vw);
+  width: min(920px, calc(100% - 28px));
   justify-content: center;
   flex-wrap: wrap;
 
@@ -42,7 +42,8 @@ body {
 }
 
 #main {
-  height: 100vh;
+  min-height: calc(100vh - 56px);
+  min-height: calc(100svh - 56px);
   width: 100%;
   background-image: url(https://wallpapercave.com/wp/wp14183402.jpg);
   background-size: cover;
@@ -51,6 +52,7 @@ body {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  padding-inline: 14px;
   padding-bottom: 12vh;
 }
 
@@ -68,6 +70,7 @@ body {
   background: rgba(0, 0, 0, 0.45);
   padding: 14px 24px;
   border-radius: 999px;
+  text-align: center;
   font-size: clamp(0.95rem, 1.5vw, 1.1rem);
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
@@ -98,10 +101,60 @@ body {
     gap: 14px;
     top: 14px;
     padding: 12px 14px;
+    border-radius: 20px;
+  }
+
+  .navbar a {
+    font-size: clamp(0.92rem, 3vw, 1rem);
+  }
+
+  .cta {
+    width: min(420px, 92vw);
+    padding: 13px 18px;
   }
 
   #main {
     padding-bottom: 10vh;
+  }
+}
+
+@media (max-width: 480px) {
+  #main {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 6vh;
+  }
+
+  .navbar {
+    position: static;
+    left: auto;
+    transform: none;
+    width: 100%;
+    gap: 8px;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .navbar a {
+    flex: 1 1 calc(50% - 8px);
+    text-align: center;
+    font-size: 0.92rem;
+    padding: 8px 6px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  .cta {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .footer p {
+    font-size: 0.88rem;
+    text-align: center;
+    padding-inline: 10px;
   }
 }
 
