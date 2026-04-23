@@ -155,19 +155,47 @@
 // Q9 Count how many numbers between 1 and 15 are greater than 8
 // Loop and count conditionally.
 
+
+// let count = 0;
 // for(let i = 1; i <= 15; i++){
 //     if(i > 8){
 //         console.log(`${i} is greater than 8`);
+//         count++;
 //     } else{
 //         console.log(`${i} is smaller than 8`);
 //     }
 // }
+// console.log(`Total numbers greater than 8: ${count}`);
 
 // Q10Ask user for password and print access status
 // Hardcoded correct password. Compare with user input.
 
-// let password = prompt("Enter your passoword");
-// console.log(Status);
+
+
+
+// let pass = "Aariz";
+
+// let password = prompt("Enter your password");
+
+// if (password === null) { 
+//     console.error("You pressed cancel");
+// } 
+// else if (password.trim() === "") { 
+//     console.error("Kuch likh to de bhai"); 
+// } 
+// else if (!isNaN(password)) { 
+//     console.error("You entered a number");
+// } 
+// else if (pass === password) {
+//     console.log("matched");
+// } 
+// else {
+//     console.log("Not Matched");
+// }
+
+
+
+
 
 // Q11. Allow only 3 attempts to enter correct password
 // If user gets it right early, stop. If not → “Account locked”
@@ -195,3 +223,52 @@
 // Q10 and 11 nahi bana
 
 
+
+// let age = prompt("Enter a Number:");
+
+// if (age === null) {
+//     console.error("You pressed Cancel Button");
+
+// } else {
+//     if (age.trim() === "") {
+//         console.error("Please write something");
+//     } else {
+//         age = Number(age);
+//         if (isNaN(age)) {
+//             console.error("Please enter a number");
+
+//         } else {
+//             console.log(`your age is ${age}`);
+//         }
+//     }
+
+// }
+
+
+// Allow only 3 attempts to enter correct password
+// If user gets it right early, stop. If not → “Account locked”
+
+let attempts = 0;
+
+let khulgaya = false;
+
+let pass = "Aariz";
+
+let password = prompt("Enter your password");
+attempts++;
+
+if (password === pass) khulgaya = true;
+
+
+while (password !== pass) {
+    if(attempts === 3) {
+         console.error("Account Locked");
+        break;
+    }
+
+    password = prompt("Enter your password");
+    if(password === pass) khulgaya = true;
+    attempts++;
+}
+
+if (khulgaya === true) console.log("Account Opened");
