@@ -61,7 +61,7 @@
 //     } else{
 //         console.log(`${i} is odd`);
 //     }
-    
+
 // }
 
 
@@ -89,9 +89,109 @@
 // Stops completely when it finds the first number divisible by 7
 
 
-for(i= 1; i <=100; i++){
-    if(i % 7 === 0){
-        break
-    }
-    console.log(i);
-}
+// for(i= 1; i <=100; i++){
+//     if(i % 7 === 0){
+//         break
+//     }
+//     console.log(i);
+// }
+
+// Q1
+// for(let i = 1; i <= 10.; i++ ){
+//     console.log(i);
+// }
+
+
+// Q2
+// for(i = 0; i <= 20; i+=2){
+//     console.log(i);
+// }
+
+// Q3
+// for(let i = 10; i >= 1; i--){
+//     console.log(i);
+// }
+
+// Q4
+// for(let i = 0; i < 5; i++){
+//     console.log("Hello");
+// }
+
+// Q5
+// for(i = 1; i <=10; i++){
+//     if(i % 2 === 0){
+//         console.log(`${i} is even`);
+//     } else{console.log(`${i} is odd`);}
+// }
+
+// Q6
+// let num = prompt("Enter a number");
+
+// if (num > 0) {
+//     console.log(`${num} is positive`);
+// } else {
+//     console.log(`${num} is negative`);
+// }
+
+
+// Q7
+
+// let age = prompt("What is your age");
+
+// if(age >= 18){
+//     console.log("Your are eligible to vote");
+// } else{
+//     console.log("Not eligible");
+// }
+
+
+// Q8
+// for (let i = 1; i <= 10; i++) {
+
+//     console.log(`5 x ${i} = ${i}`);
+
+// }
+
+// Q9 Count how many numbers between 1 and 15 are greater than 8
+// Loop and count conditionally.
+
+// for(let i = 1; i <= 15; i++){
+//     if(i > 8){
+//         console.log(`${i} is greater than 8`);
+//     } else{
+//         console.log(`${i} is smaller than 8`);
+//     }
+// }
+
+// Q10Ask user for password and print access status
+// Hardcoded correct password. Compare with user input.
+
+// let password = prompt("Enter your passoword");
+// console.log(Status);
+
+// Q11. Allow only 3 attempts to enter correct password
+// If user gets it right early, stop. If not → “Account locked”
+
+
+// console.warn("You have only three attempts to enter the correct passowrd");
+
+// for (let i = 0; i < 3; i++) {
+
+//     let correct_passoword = "Aariz";
+//     let passoword = prompt("Enter your password");
+
+//     if (passoword === correct_passoword) {
+//         console.log("Congratulations Access granted");
+//     } else if(passoword) {
+//         console.log("You have only 2 attempts left");
+//     } else if(passoword){
+//         console.log("last attempt");
+//     } else {
+//         console.log("Account Locked");
+//     }
+// }
+
+
+// Q10 and 11 nahi bana
+
+
