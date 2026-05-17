@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(24, 24, 24);
+
+    display: grid;
+
+    grid-template-columns: 260px 260px 260px 270px;
+
+    grid-template-rows:
+        90px 170px 170px 80px 80px;
+
+    gap: 30px;
+
+    grid-template-areas:
+        "small_img circle categories top_left"
+        "small_img circle categories big_img"
+        "butusic address categories big_img"
+        "butusic figure bottom_right bottom_right"
+        "butusic qr_code bottom_right bottom_right";
+
+    padding: 40px 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900px;
+}
+
+.small_img {
+    grid-area: small_img;
+    background-color: #ff6b6b;
+    border-radius: 25px;
+
+    background-image: url(https://lh5.googleusercontent.com/oyAX4KBqmtzD-1i9X7bTIi1-fIgrmQXQB_hhSmIz4OY08OYAym3SzRhWtussSunASexX1JLBOglU27Oc6XY7vhlybcM4BMK5oNfpvQXMR1L91YmbD5fedvOR_M3SGnt82M9YtPKgq3isV2uZFe7UGEipHPtGGr_KUyLwrEemzcw6uDOj1BIaSAjBXg);
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.circle {
+    grid-area: circle;
+    background-color: #4ecdc4;
+    border-radius: 25px;
+
+}
+
+.circle img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+    .categories {
+        grid-area: categories;
+        background-color: rgb(33, 33, 33);
+        color: white;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        padding: 25px 30px;
+
+        align-items: flex-start;
+        justify-content: space-between;
+        transition: all 0.3s;
+        cursor: pointer;
+        
+    }
+
+    .categories h2,ul,h3:hover{
+        color: white
+    }
+
+
+.categories ul {
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    margin-top: -120px;
+}
+
+.top_left {
+    grid-area: top_left;
+    background-color: #5f27cd;
+    border-radius: 25px;
+}
+
+.butusic {
+    grid-area: butusic;
+    background-color: #ff9f43;
+    border-radius: 25px;
+}
+
+.address {
+    grid-area: address;
+    background-color: #10ac84;
+    border-radius: 25px;
+
+    padding: 25px 30px;
+
+}
+
+.location{
+    display: flex;
+}
+
+.big_img {
+    grid-area: big_img;
+    background-color: #341f97;
+    border-radius: 25px;
+    grid-row: 2/4;
+
+    background-image: url(https://miro.medium.com/v2/resize:fit:720/0*JfNtb-4In1M0Y8q9.png);
+
+    background-size: cover;
+    background-position: center;
+
+}
+
+.figure {
+    grid-area: figure;
+    background-color: rgb(33, 33, 33);
+    border-radius: 25px;
+    transform: rotate(5deg);
+    display: flex;
+    justify-content: center;
+
+}
+
+.qr_code {
+    grid-area: qr_code;
+    background-color: #2e86de;
+    border-radius: 25px;
+}
+
+.bottom_right {
+    grid-area: bottom_right;
+    background-color: white;
+    border-radius: 25px;
+}

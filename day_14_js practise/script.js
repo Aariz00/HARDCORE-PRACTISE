@@ -248,27 +248,3 @@
 // Allow only 3 attempts to enter correct password
 // If user gets it right early, stop. If not → “Account locked”
 
-let attempts = 0;
-
-let khulgaya = false;
-
-let pass = "Aariz";
-
-let password = prompt("Enter your password");
-attempts++;
-
-if (password === pass) khulgaya = true;
-
-
-while (password !== pass) {
-    if(attempts === 3) {
-         console.error("Account Locked");
-        break;
-    }
-
-    password = prompt("Enter your password");
-    if(password === pass) khulgaya = true;
-    attempts++;
-}
-
-if (khulgaya === true) console.log("Account Opened");

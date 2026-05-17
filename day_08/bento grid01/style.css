@@ -28,6 +28,8 @@ main {
     text-align: center;
     text-transform: uppercase;
     font-weight: 900px;
+
+    padding: 40px 40px;
 }
 
 .left-top {
