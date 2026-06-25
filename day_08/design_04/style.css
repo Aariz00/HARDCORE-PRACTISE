@@ -9,6 +9,7 @@ html,
 body {
     height: 100%;
     width: 100%;
+    /* text-align: center; */
 }
 
 
@@ -26,10 +27,12 @@ main{
                          "div-left bottom-up div-right"
                          "div-left bottom-down div-right";
 
+
     gap: 20px;
     padding: 30px 30px;
     text-align: center;
     text-transform: uppercase;
+    
 }
 
 
@@ -37,6 +40,7 @@ header{
     grid-area: header;
     background-color: aqua;
     border-radius: 20px;
+    
 }
 
 section{
